@@ -1,0 +1,16 @@
+#%Module 1.0#####################################################################
+#
+#Edited by Terence Junjie LIU
+#
+#
+proc ModulesHelp { } {
+    puts stderr "\t[module-info name] - loads the OpenMPI V4.1.1"
+}
+
+#conflict
+module-whatis   "OpenMPI V4.1.1"
+#module load
+conflict	mpi
+prepend-path	PATH             /Storage2030005000/apps/openmpi-4.1.1/bin
+prepend-path	LD_LIBRARY_PATH  /Storage2030005000/apps/openmpi-4.1.1/lib
+prepend-path	MANPATH          /Storage2030005000/apps/openmpi-4.1.1/share/man

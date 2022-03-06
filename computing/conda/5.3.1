@@ -1,0 +1,16 @@
+#%Module 1.0#####################################################################
+#
+#Edited by Terence Junjie LIU
+#
+#
+proc ModulesHelp { } {
+    puts stderr "\t[module-info name] - loads the Anaconda 5.3.1"
+}
+
+#conflict
+module-whatis   "Anaconda 5.3.1"
+#module load
+prepend-path    PATH             /Storage2030005000/apps/anaconda3/bin
+
+setenv		MATLAB		matlab
+####

@@ -1,0 +1,19 @@
+#%Module 1.0#####################################################################
+#
+#Edited by Terence Junjie LIU
+#
+#
+proc ModulesHelp { } {
+    puts stderr "\t[module-info name] - loads the MATLAB R2021B"
+    puts stderr "with full toolbox, provided by BNU-HKBU UIC ITSC"
+}
+
+#conflict
+module-whatis   "MATLAB R2021B"
+#module load
+append-path   PATH		/Storage2030005000/apps/gap-4.11.1
+append-path   LIBRARY_PATH	/Storage2030005000/apps/gap-4.11.1/lib
+append-path   LD_LIBRARY_PATH	/Storage2030005000/apps/gap-4.11.1/lib
+setenv		GAP		gap
+setenv		gap		gap
+####

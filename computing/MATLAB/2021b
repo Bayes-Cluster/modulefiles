@@ -1,0 +1,17 @@
+#%Module 1.0#####################################################################
+#
+#Edited by Terence Junjie LIU
+#
+#
+proc ModulesHelp { } {
+    puts stderr "\t[module-info name] - loads the MATLAB R2021B"
+    puts stderr "with full toolbox, provided by BNU-HKBU UIC ITSC"
+}
+
+#conflict
+module-whatis   "MATLAB R2021B"
+#module load
+prepend-path    PATH             /Storage2030005000/apps/MATLAB/R2021b/bin
+
+setenv		MATLAB		matlab
+####
